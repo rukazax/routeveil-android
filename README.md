@@ -12,7 +12,7 @@
 
 Routeveil — независимая компактная Java-оболочка для Android 8.0+ (API 26+) вокруг закреплённого `org.torproject:onionmasq:1.9.1Beta-local-release`. Собственный VPN-сервер не нужен: используются публичная сеть Tor и сторонние мосты/транспортная инфраструктура. Это **не означает отсутствие серверов** или гарантированный обход блокировок.
 
-Это описание проектного контракта экспериментальной версии, а не отчёт об уже проверенных возможностях. Проверки отмечены как PENDING в [плане испытаний](<docs/ru/testing.md>).
+Это описание проектного контракта экспериментальной версии и результатов первого частичного прогона. Остальные проверки отмечены как PENDING в [плане испытаний](<docs/ru/testing.md>).
 
 ### Предусмотренное поведение
 
@@ -41,7 +41,7 @@ Routeveil — независимая компактная Java-оболочка 
 
 Routeveil is an independent, compact Java shell for Android 8.0+ (API 26+), using pinned `org.torproject:onionmasq:1.9.1Beta-local-release`. It needs no developer-operated VPN server, but still depends on Tor relays, bridges and transport infrastructure.
 
-The following is the experimental design contract, **not a verified feature or safety claim**:
+The following is the experimental design contract plus the actual first-run status; unlisted capabilities remain **unverified**:
 
 - AUTO tries at most four prepared user-supplied/built-in bridge profiles and accepts the first ready one. No silent direct-Tor fallback.
 - An explicit Optimize action compares bootstrap and a bounded HTTPS/64 KiB transfer through a separate `:probe` companion APK.
@@ -70,7 +70,7 @@ gradle :app:assembleDebug :probe:assembleDebug
 gradle :app:testDebugUnitTest :probe:testDebugUnitTest
 ```
 
-These commands are **not recorded as executed or passing here**. Use the implementation's actual Gradle/JDK configuration; this document does not assert a Gradle wrapper is shipped. Device installation, publication, signing and release verification are separate steps. Both APKs must use the same signing identity for the signature-protected companion protocol.
+The four commands above were executed successfully on 2026-11-07 with Gradle 9.3.1 and JDK 21; see the status section and the acceptance matrix for what did **not** work. Use the implementation's actual Gradle/JDK configuration; this document does not assert a Gradle wrapper is shipped. Device installation, publication, signing and release verification are separate steps. Both APKs must use the same signing identity for the signature-protected companion protocol.
 
 ## Project status / Статус
 
