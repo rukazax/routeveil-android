@@ -1,0 +1,13 @@
+.gradle/
+.gradle-home/
+.android-home/
+**/build/
+local.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+.env
+.private/
+artifacts/

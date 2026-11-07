@@ -1,0 +1,22 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'io.github.rukazax.routeveil.probe'
+    compileSdk 36
+    defaultConfig {
+        applicationId 'io.github.rukazax.routeveil.probe'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '0.1.0-experimental'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes { release { minifyEnabled false } }
+}
+
+// No runtime dependencies. Both a plain main() self-test and a JUnit wrapper compile
+// from src/test/java (see docs/en/probe-protocol.md).
+dependencies { testImplementation 'junit:junit:4.13.2' }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <permission android:name="io.github.rukazax.routeveil.permission.PROBE" android:protectionLevel="signature" />
+    <uses-permission android:name="io.github.rukazax.routeveil.permission.PROBE" />
+    <queries>
+        <intent><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent>
+        <package android:name="io.github.rukazax.routeveil.probe" />
+    </queries>
+    <application android:name=".RouteveilApplication" android:label="Routeveil" android:icon="@drawable/ic_routeveil" android:theme="@style/AppTheme"
+        android:allowBackup="false" android:supportsRtl="true" android:usesCleartextTraffic="false">
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+        <provider android:name=".DiagnosticProvider" android:authorities="${applicationId}.diagnostics" android:exported="false" android:grantUriPermissions="true" />
+        <service android:name=".TunnelService" android:permission="android.permission.BIND_VPN_SERVICE"
+            android:exported="false" android:foregroundServiceType="systemExempted">
+            <intent-filter><action android:name="android.net.VpnService"/></intent-filter>
+            <meta-data android:name="android.net.VpnService.SUPPORTS_ALWAYS_ON" android:value="true" />
+        </service>
+    </application>
+</manifest>

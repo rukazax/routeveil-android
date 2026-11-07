@@ -1,0 +1,175 @@
+{
+  "commit": "086d05145f5aa711ac300d04edc19c26360bac29",
+  "sources": [
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/BridgeLineParser.java",
+      "gitBlob": "e14a98064671f42548b95413b62eb5b196179ea1",
+      "sha256": "720f6e77c06105223e43dd89a517108a4fa343b73388c760381841f07d71a9ab"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/CircuitStore.java",
+      "gitBlob": "e99b199e3bd99012f1343049a54d7262dd643e03",
+      "sha256": "757c73c23e3690936d1ad57b42fa5fb815988886609d3fae99c964db081e38d8"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/ConnectivityHandler.java",
+      "gitBlob": "af9b04198582d17927cd4a92901589e636c3fdb2",
+      "sha256": "62795f90367e80dbeb9d7e4953b74ca1e475d39598dc21c4163d989e3c18c667"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/ISocketProtect.java",
+      "gitBlob": "68bc2a52e122584398a757e9424eb8e06ba0ddac",
+      "sha256": "424f4d76809caa8f3d4ef3be2c252ab13f14044faaa9f810292259c4560222c2"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/OnionMasq.java",
+      "gitBlob": "9c9044c41ca5aed8a4af0ce836fb498caeb23b11",
+      "sha256": "75b85a8597413c718335bb45f468e5e9c0d775ea592b9353e9dcd96bd416965d"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/OnionMasqJni.java",
+      "gitBlob": "4511e7bc699488649d02ba99828079a7847af865",
+      "sha256": "9998b6aef05c00bdadad02a093884ba0a9b3123d3f08d045edefc71a9222f807"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/OnionmasqEventObservable.java",
+      "gitBlob": "5fb9be140cd4baae87158c4b3c052f21c37a55e8",
+      "sha256": "b0febea447eca2c1482fa21c225a8486d216d1f68de603043695beda6e09e821"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/circuit/Circuit.java",
+      "gitBlob": "068f8c7944eb813f36796984a3e6d67d7766f5ab",
+      "sha256": "1f5437bc45f1aa988e4a8f2b8133f490e989ae2d8950e341d59c5fbecdeed3ed"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/circuit/CircuitCountryCodes.java",
+      "gitBlob": "84f8717c4c9de8f7af690d8332ea6781a88ab42a",
+      "sha256": "2eb24e283ac0e029838c155dcdf8cc878639b379fed90e098b1c3810b9bfcd47"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/circuit/ProxyAddressPair.java",
+      "gitBlob": "0cdbddcf16d6f6069f2991b18c7e41c3c75f1b4a",
+      "sha256": "1c94df9d21d58968473c231ad62dcdf994e8448d6c3dc87c7493826c16b15918"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/ArtiException.java",
+      "gitBlob": "cc3ec0b73729c531c5a83230df434f139bf2f5d9",
+      "sha256": "4f63d20699cd2e53d4bc8b07146daf59d91ae30a4e3323ade5a03f7537ee254b"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/ArtiStateException.java",
+      "gitBlob": "ca6eaca3bfa356004ffbf982e75128bb73ab8665",
+      "sha256": "ac9059eb71fd8f0b9b9335621fc6fc34477e0048b772f317686f035d5d964a4d"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/BridgelineException.java",
+      "gitBlob": "fa8ed3d923a97bb619e80fec830408d6d5f603d9",
+      "sha256": "2679358060b5a7d4b77e1ee199afaf758f55ac1e0a7d10dd57c7641f4b66d1d1"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/CountryCodeException.java",
+      "gitBlob": "17c431b4ffe86d5918ff4f09e8df077bc282faa2",
+      "sha256": "51462e5edad7cc3abe8564c4b0da1c57ad6705d75cbd412c6a3fd0255d2a818c"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/JniMisuseException.java",
+      "gitBlob": "ae859bf65d7c88f4e1e33d818e98bf83bd83de72",
+      "sha256": "d22881d569b2e291349fc2bd98387cc1b2b929d38e0e135b846268886a0eb06e"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/OnionmasqException.java",
+      "gitBlob": "667f44458efe67d0bc3135e200694c50ecf318fd",
+      "sha256": "72458a9da1525540320307c58f3b2713ea1d4eb9e58bbc3d192cb9ab2e2c6e0e"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/ProxyStoppedException.java",
+      "gitBlob": "f9a30105993f5d815fd0e51037cacd41e162b89b",
+      "sha256": "ee6eb1710582ce65083d2a350fcdab13fbb3cc6fed886c2082400f7f8a44c5d0"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/RustPanicException.java",
+      "gitBlob": "71c60bc428dac499a52f32dc12e9f682e304f9af",
+      "sha256": "f09667a23e576fa6fb9d03e8277bea4c95327f24a55178e791ff47c63c8112e6"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/errors/TorAccessException.java",
+      "gitBlob": "d6be2fda46f96aefa97dec49e423b9cb98046842",
+      "sha256": "46882d0eb23f37c16f9186288d7f23b97dee808bb546554f8dc613f71a004097"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/BootstrapEvent.java",
+      "gitBlob": "5b5caf649e5129226493ce54c8c7a5acaf25870e",
+      "sha256": "105c022b918ad913ad300a8bd578a332ba4a157a225ec203ea85385b7be075b2"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/ClosedConnectionEvent.java",
+      "gitBlob": "c1d7af02153b40fcc2f48572dcc859696126056a",
+      "sha256": "0b29542419046fbf5612d17312b474f5efa683b9dd517af615317c44f7df00c6"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/ConnectivityEvent.java",
+      "gitBlob": "4343eb1a26689fd0ee4de4556d7d48fbae17bb5e",
+      "sha256": "0164c95eb2f2d183ee72186cddbfd1802481f32568094021f54084f79535f63b"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/DNSConnectivityEvent.java",
+      "gitBlob": "f183ed90dde2f9887cce65a8f94296921b34d5a6",
+      "sha256": "7a84689df413b5e45de2f8603ce7974db94c3b61f62d35210d16d66d8664c557"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/FailedConnectionEvent.java",
+      "gitBlob": "4fb3ba9837eccd51be1a5a9d4fc7d9db34354f59",
+      "sha256": "72c06d1e7a5562c49e8a44117eff968cf3150ab31c6e54efc5f8d3580c1bf3bd"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/NewConnectionEvent.java",
+      "gitBlob": "68060ba2d8a9dc44e126949185e6e3164950037f",
+      "sha256": "cc80051abf7b170cd61bf447366106e54946e735c8faddcecd9492af5d9fd7ca"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/NewDirectoryEvent.java",
+      "gitBlob": "e2747dfb57bd5d2746278d6fef1749903126f85f",
+      "sha256": "b396922e89a8644d6161b14db771a8b6d9f9051a19d5559f25cb68942907f653"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/OnionmasqEvent.java",
+      "gitBlob": "bf70123af40c837feaadac7c3a899490b51e2a12",
+      "sha256": "f52b77556541cfb0414467ec62373fefa1e12944c798da79ca4860034bbe021d"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/RelayDetails.java",
+      "gitBlob": "fd2614d307a780461f2c5115f3312908bcc7e022",
+      "sha256": "ed2f57e994c3facbfbd644cb17f893e35bc296aa72f13db6c9a5467495014f28"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/events/VPNetworkLostEvent.java",
+      "gitBlob": "257df40f717dadbb5b78919bdc1c3313e38c4644",
+      "sha256": "836145ef6fb5d02fe5cc54f00d1fc9ecf40cd1ec77c1b1d00b4b26f370fc9683"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/logging/LogHelper.java",
+      "gitBlob": "99dc33d25fece90b73f283453c9b795c184e9458",
+      "sha256": "9f54d7b97bcb00af8ed4ccb083c9ca06df64fc2206c1a551051d82e469caf27c"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/logging/LogItem.java",
+      "gitBlob": "bf3263ce01a6bec09bc48526eaa04ac39cf23d22",
+      "sha256": "65108c6d25f9e77231bfa610ad8f0645cc674e3f1b2d8ac0cdbbf3a410ac3374"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/logging/LogObservable.java",
+      "gitBlob": "0a1591eed2f3177428391ea1fed4f1666005434d",
+      "sha256": "e7ba4d27758749cc63a422e6ca9ad86c9bd50c7b91a34bbd5dce6b5bc99ff574"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/utils/OnionmasqThreadpoolExecutor.java",
+      "gitBlob": "889a408b921fb8b7e3d03f5cc8ef66835e4c668c",
+      "sha256": "2c358f71e445a14c6a03b705acbd2759af8d05b713e1ec9f53d710294edc5ce0"
+    },
+    {
+      "path": "android/OnionmasqAndroid/onionmasq/src/main/java/org/torproject/onionmasq/utils/Utils.java",
+      "gitBlob": "eaf2e1061070595d05319cee5a6d7414e5b764e0",
+      "sha256": "f128b2dec6be830c602ffedc0ae5de4ff073dc9bd5c753a72c45a514f109fa16"
+    }
+  ]
+}

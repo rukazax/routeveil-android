@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="880" viewBox="0 0 1280 880" role="img" aria-labelledby="title desc">
+  <title id="title">Routeveil experimental architecture</title>
+  <desc id="desc">Independent diagram: selected apps and a separately signed-permission-protected companion UID reach a retained Android TUN, Onionmasq, Arti, optional bridges, Tor relays and an HTTPS site. Direct exceptions bypass Tor. Main UID is excluded in bridge mode. Runtime verification is pending.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#45c9bd"/></marker>
+    <marker id="muted" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#e9b66b"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#eef3fa} .h{font-size:24px;font-weight:700}.t{font-size:19px}.s{font-size:16px;fill:#bdcadd}.box{fill:#18283b;stroke:#45617e;stroke-width:2}.green{fill:#103b3e;stroke:#45c9bd;stroke-width:2}.warn{fill:#3b2e24;stroke:#e9b66b;stroke-width:2}.line{fill:none;stroke:#45c9bd;stroke-width:3;marker-end:url(#arrow)}.dash{fill:none;stroke:#e9b66b;stroke-width:3;stroke-dasharray:8 6;marker-end:url(#muted)}
+    </style>
+  </defs>
+  <rect width="1280" height="880" rx="20" fill="#0b1524"/>
+  <text x="44" y="52" class="h" style="font-size:32px">Routeveil</text>
+  <text x="44" y="83" class="t">Experimental Android routing · Экспериментальная архитектура</text>
+  <rect x="916" y="27" width="320" height="55" rx="12" class="warn"/>
+  <text x="936" y="61" class="t">Verification pending · НЕ PASS</text>
+  <rect x="44" y="118" width="1192" height="468" rx="18" fill="#101f30" stroke="#334a64"/>
+  <text x="64" y="148" class="s">ANDROID DEVICE / УСТРОЙСТВО · MAIN APK + SEPARATE COMPANION APK</text>
+  <rect x="70" y="175" width="300" height="100" rx="12" class="box"/>
+  <text x="90" y="207" class="h">Selected applications</text>
+  <text x="90" y="237" class="s">YouTube / Instagram / Telegram</text>
+  <text x="90" y="259" class="s">Except visible DIRECT exceptions</text>
+  <rect x="70" y="305" width="300" height="110" rx="12" class="green"/>
+  <text x="90" y="338" class="h">Companion :probe</text>
+  <text x="90" y="368" class="t">Distinct UID · отдельный UID</text>
+  <text x="90" y="396" class="s">Tor-check + bounded HTTPS 64 KiB</text>
+  <rect x="430" y="225" width="300" height="145" rx="12" class="green"/>
+  <text x="452" y="258" class="h" style="font-size:20px">VpnService → retained TUN</text>
+  <text x="452" y="291" class="t">Blocking during switches/errors</text>
+  <text x="452" y="321" class="s">While service remains alive</text>
+  <text x="452" y="347" class="s">IPv4 / IPv6 / DNS policy</text>
+  <path d="M370 225 H400 V265 H428" class="line"/>
+  <path d="M370 360 H400 V329 H428" class="line"/>
+  <rect x="790" y="225" width="416" height="145" rx="12" class="green"/>
+  <text x="812" y="260" class="h">Onionmasq → Arti</text>
+  <text x="812" y="294" class="t">Pinned 1.9.1Beta-local-release</text>
+  <text x="812" y="324" class="s">IPtProxy for obfs4 / WebTunnel / Snowflake</text>
+  <text x="812" y="349" class="s">New circuits ≠ guaranteed new IP</text>
+  <path d="M730 297 H788" class="line"/>
+  <rect x="430" y="432" width="420" height="122" rx="12" class="box"/>
+  <text x="450" y="465" class="h">Main APK: UI / policy / lifecycle</text>
+  <text x="450" y="495" class="s">AUTO ≤4 profiles · Optimize is explicit</text>
+  <text x="450" y="520" class="s">Same signer + signature permission for helper</text>
+  <text x="450" y="543" class="s">Main UID bypassed in bridge mode</text>
+  <path d="M430 485 H220 V417" class="dash"/>
+  <text x="75" y="520" class="s">Explicit, validated IPC</text>
+  <text x="75" y="544" class="s">No helper → no active speed score</text>
+  <rect x="897" y="432" width="309" height="122" rx="12" class="warn"/>
+  <text x="917" y="465" class="h">DIRECT exceptions</text>
+  <text x="917" y="495" class="s">Editable local app preferences</text>
+  <text x="917" y="520" class="s">NOT a carrier whitelist</text>
+  <text x="917" y="543" class="s">Outside Tor · ordinary IP visible</text>
+  <rect x="70" y="637" width="290" height="95" rx="12" class="green"/>
+  <text x="90" y="672" class="h" style="font-size:21px">Reachable bridge / entry</text>
+  <text x="90" y="703" class="s">No silent direct-Tor fallback</text>
+  <rect x="430" y="637" width="300" height="95" rx="12" class="green"/>
+  <text x="450" y="672" class="h">Public Tor relays</text>
+  <text x="450" y="703" class="s">No developer-operated VPN server</text>
+  <rect x="800" y="637" width="406" height="95" rx="12" class="green"/>
+  <text x="820" y="672" class="h">HTTPS destination</text>
+  <text x="820" y="703" class="s">May reject Tor exit · CAPTCHA manual only</text>
+  <path d="M998 370 V402 H876 V605 H215 V635" class="line"/>
+  <path d="M360 684 H428" class="line"/>
+  <path d="M730 684 H798" class="line"/>
+  <path d="M1206 493 H1220 V760 H1050 V734" class="dash"/>
+  <text x="837" y="785" class="s">DIRECT → underlying network</text>
+  <text x="44" y="815" class="s">Strict Private DNS: blocked · Crash/OS lockdown limitations · API 26–28 UID isolation caveat</text>
+  <text x="44" y="845" class="s">Independent project · No Tor logo/endorsement · No universal censorship-circumvention claim</text>
+</svg>
